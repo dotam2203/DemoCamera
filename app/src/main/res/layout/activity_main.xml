@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_camera"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        style="@style/text_color"
+        android:id="@+id/tv_ser"
+        android:text="@string/serial"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_user"
+        app:layout_constraintVertical_bias="0.95"/>
+    <EditText
+        style="@style/text_color"
+        android:layout_width="280dp"
+        android:hint="input serial"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_ser"
+        app:layout_constraintBottom_toBottomOf="@id/tv_ser"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        style="@style/text_color"
+        android:id="@+id/tv_user"
+        android:text="@string/user"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_pass"
+        app:layout_constraintVertical_bias="0.95"/>
+    <EditText
+        style="@style/text_color"
+        android:layout_width="280dp"
+        android:hint="input user"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_user"
+        app:layout_constraintBottom_toBottomOf="@id/tv_user"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        style="@style/text_color"
+        android:id="@+id/tv_pass"
+        android:text="@string/pass"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"/>
+    <EditText
+        style="@style/text_color"
+        android:layout_width="280dp"
+        android:hint="input pass"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_pass"
+        app:layout_constraintBottom_toBottomOf="@id/tv_pass"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/text_color"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.7"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
